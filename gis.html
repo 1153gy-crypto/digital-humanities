@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>GIS 지도</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="jeongsamode">
+
+<header class="main-header">
+
+    <div class="main-logo">
+        승자의 기록, 패자의 꿈
+    </div>
+
+    <div class="mode-toggle-box">
+        <span>正史 모드</span>
+
+        <label class="switch">
+            <input type="checkbox" id="gisToggle">
+            <span class="slider"></span>
+        </label>
+
+        <span>野私 모드</span>
+    </div>
+
+    <div class="header-icons">
+        🔍 🔔 🧒🏻 ☰
+    </div>
+
+</header>
+
+<div class="gis-page">
+
+    <aside class="left-panel">
+
+    <div class="archive-logo-box">
+        <div class="archive-mark">🌄</div>
+        <h3>조선역사 디지털 아카이브</h3>
+        <p>Joseon History Digital Archive</p>
+    </div>
+
+    <div class="list-title">
+        ☰ 전체 목록 보기
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🎊</span>
+        <div>
+            <strong>태조와 조선건국</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">⚔️</span>
+        <div>
+            <strong>태종과 왕자의 난</strong>
+        </div>
+    </div>
+
+    <div class="event-item active">
+        <span class="event-icon">⚡</span>
+        <div>
+           <strong>단종과 세조</strong>
+           <p>1453년 | 계유정난</p>
+           <p class="event-desc">
+               왕권의 안정 VS 충절과 비극
+           </p>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">📖</span>
+        <div>
+            <strong>연산군과 사화</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">👑</span>
+        <div>
+            <strong>중종과 중종반정</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🔥</span>
+        <div>
+            <strong>선조와 임진왜란</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">👑</span>
+        <div>
+            <strong>광해군과 인조</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🌀</span>
+        <div>
+            <strong>숙종과 환국정치</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🩻</span>
+        <div>
+            <strong>영조와 사도세자</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🚢</span>
+        <div>
+            <strong>조선의 근대화</strong>
+        </div>
+    </div>
+
+</aside>
+
+    <main class="gis-main">
+
+        <section class="gis-hero">
+
+            <h1 id="gisTitle">
+                유배 길 따라, 단종의 여정
+            </h1>
+
+            <p id="gisSubtitle">
+                한양에서 영월까지 이어진 단종의 유배길
+            </p>
+
+        </section>
+
+        <section class="route-box">
+
+            
+
+            <div class="route-step">
+                한양
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="route-step">
+                원주
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="route-step">
+                영월
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="route-step">
+                청령포
+            </div>
+
+        </section>
+
+        <section class="map-area">
+
+    <div class="map-stage">
+
+        <img src="assets/korea-map.jpg" class="map-image">
+
+        <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="route-path"
+            d="M35 47 C41 50, 47 53, 53 56
+               C58 58, 63 60, 67 61
+               C68 61, 69 61, 70 61" />
+        </svg>
+
+        <button class="map-point point1" data-title="한양" data-text="단종이 출발한 장소">
+            한양
+        </button>
+
+        <button class="map-point point2" data-title="원주" data-text="치악산을 넘은 경로">
+            원주
+        </button>
+
+        <button class="map-point point3" data-title="영월" data-text="단종이 유배된 지역">
+            영월
+        </button>
+
+        <button class="map-point point4" data-title="청령포" data-text="단종의 대표 유배지">
+            청령포
+        </button>
+
+    </div>
+
+</section>
+
+<section class="place-cards">
+
+    <div class="place-card" data-title="한양" data-text="단종 유배길의 출발지입니다.">
+        <span>출발지</span>
+        <h3>한양</h3>
+        <p>단종이 궁궐을 떠난 곳</p>
+    </div>
+
+    <div class="place-card" data-title="원주" data-text="한양에서 영월로 향하는 주요 경유지입니다.">
+        <span>이동 경로</span>
+        <h3>원주</h3>
+        <p>영월로 향하던 길목</p>
+    </div>
+
+    <div class="place-card" data-title="영월" data-text="단종이 유배된 지역입니다.">
+        <span>유배지</span>
+        <h3>영월</h3>
+        <p>단종의 유배가 시작된 공간</p>
+    </div>
+
+    <div class="place-card" data-title="청령포" data-text="단종의 대표 유배지로 기억되는 장소입니다.">
+        <span>마지막 흔적</span>
+        <h3>청령포</h3>
+        <p>단종의 비극이 남은 장소</p>
+    </div>
+
+</section>
+
+<section class="gis-info">
+
+    <h2 id="placeTitle">
+
+
+</section>
+
+<div class="gis-modal" id="gisModal">
+
+    <div class="gis-modal-box">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-top">
+            <p class="modal-tag">출발지 · 세조 3년 6월 22일</p>
+            <h2>한양</h2>
+            <p>漢陽 · 현 서울특별시 종로구</p>
+        </div>
+
+        <img src="assets/hanyang.jpg" class="modal-image">
+
+        <div class="modal-body">
+
+    <h3>열두 살에 왕이 되어 열일곱에 쫓겨났다.</h3>
+
+    <p class="modal-address">
+        📍 현재 지명: 서울특별시 종로구 돈화문로
+    </p>
+
+    <div class="modal-section-title">
+        정사 기록
+    </div>
+
+    <div class="original-text">
+        魯山君發向寧越 命宦官安老 送于花陽亭
+    </div>
+
+    <p>
+        노산군이 영월로 떠나가니, 임금이 환관 안로에게 명하여
+        화양정에서 전송하게 하였다.
+    </p>
+
+    <div class="modal-section-title">
+        추가 정사 기사 — 강원도 관찰사 지시
+    </div>
+
+    <div class="original-text">
+        命江原道觀察使金光壽 曲盡措置
+    </div>
+
+    <p>
+        강원도 관찰사 김광수에게 곡진하게 조치할 것을 명하였다.
+    </p>
+
+    <p>
+        같은 날 기사.
+    </p>
+
+    <p class="modal-source">
+        📖 『세조실록』 권9, 세조 3년 6월 21·22일
+    </p>
+
+</div>
+
+    </div>
+
+</div>
+    </main>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

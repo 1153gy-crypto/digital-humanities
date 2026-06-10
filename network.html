@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>인물 관계망</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="jeongsamode">
+
+<header class="main-header">
+
+    <div class="main-logo">
+        승자의 기록, 패자의 꿈
+    </div>
+
+    <div class="mode-toggle-box">
+        <span>正史 모드</span>
+
+        <label class="switch">
+            <input type="checkbox" id="networkToggle">
+            <span class="slider"></span>
+        </label>
+
+        <span>野私 모드</span>
+    </div>
+
+    <div class="header-icons">
+        🔍 🔔 🧒🏻 ☰
+    </div>
+
+</header>
+
+<div class="network-page">
+
+    <aside class="left-panel">
+
+        <div class="archive-logo-box">
+            <div class="archive-mark">🌄</div>
+            <h3>조선역사 디지털 아카이브</h3>
+            <p>Joseon History Digital Archive</p>
+        </div>
+
+        <div class="list-title">
+            ☰ 전체 목록 보기
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">🎊</span>
+            <div>
+                <strong>태조와 조선건국</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">⚔️</span>
+            <div>
+                <strong>태종과 왕자의 난</strong>
+            </div>
+        </div>
+
+        <div class="event-item active">
+            <span class="event-icon">⚡</span>
+            <div>
+               <strong>단종과 세조</strong>
+               <p>1453년 | 계유정난</p>
+               <p class="event-desc">
+                   왕권의 안정 VS 충절과 비극
+               </p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">📖</span>
+            <div>
+                <strong>연산군과 사화</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">👑</span>
+            <div>
+                <strong>중종과 중종반정</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">🔥</span>
+            <div>
+                <strong>선조와 임진왜란</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">👑</span>
+            <div>
+                <strong>광해군과 인조</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">🌀</span>
+            <div>
+                <strong>숙종과 환국정치</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">🩻</span>
+            <div>
+                <strong>영조와 사도세자</strong>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <span class="event-icon">🚢</span>
+            <div>
+                <strong>조선의 근대화</strong>
+            </div>
+        </div>
+
+    </aside>
+
+    <main class="network-main">
+
+        <section class="network-hero">
+
+            <h1>인물 관계망</h1>
+            <p>단종과 세조를 둘러싼 인물들의 관계와 세력 구도를 시각화합니다.</p>
+
+        
+
+    
+
+</section>
+
+<section class="network-board">
+
+    <svg class="network-lines" viewBox="0 0 1000 620" preserveAspectRatio="none">
+
+        <line class="link loyal-link" x1="210" y1="200" x2="430" y2="260" />
+        <line class="link loyal-link" x1="260" y1="430" x2="430" y2="320" />
+
+        <line class="link enemy-link" x1="210" y1="200" x2="610" y2="260" />
+
+        <line class="link loyal-link" x1="790" y1="200" x2="610" y2="260" />
+        <line class="link enemy-link" x1="790" y1="200" x2="430" y2="260" />
+
+        <line class="link betray-link" x1="500" y1="520" x2="260" y2="430" />
+        <line class="link betray-link" x1="500" y1="520" x2="610" y2="320" />
+
+        <line class="link tragic-link" x1="730" y1="440" x2="610" y2="320" />
+        <line class="link tragic-link" x1="730" y1="440" x2="430" y2="320" />
+
+    </svg>
+
+    
+    <!-- 관계 설명 라벨 -->
+
+
+    <div class="person-node king-node dan-node" data-title="단종" data-text="어린 나이에 왕위에 올라 비극적 최후를 맞은 임금. 계유정난 이후 고립되어 영월로 유배되었습니다.">
+        <strong>단종</strong>
+    </div>
+
+    <div class="person-node king-node sejo-node" data-title="세조" data-text="권력을 장악한 강력한 왕권. 계유정난을 통해 정국을 장악했습니다.">
+        <strong>세조</strong>
+    </div>
+
+    <div class="person-node loyal-node kim-node" data-title="김종서" data-text="문종의 고명을 받은 고명대신. 계유정난의 첫 표적이 되었습니다.">
+        <strong>김종서</strong>
+    </div>
+
+    <div class="person-node loyal-node seong-node" data-title="성삼문" data-text="집현전 출신 충신. 단종 복위 운동의 주역으로 절개를 지켰습니다.">
+        <strong>성삼문</strong>
+    </div>
+
+    <div class="person-node power-node han-node" data-title="한명회" data-text="계유정난의 총설계자. 살생부를 만들고 세조 집권을 도운 핵심 공신입니다.">
+        <strong>한명회</strong>
+    </div>
+
+    <div class="person-node power-node shin-node" data-title="신숙주" data-text="집현전 출신이지만 세조의 편에 선 인물. 성삼문과 대비되는 변절의 상징으로 기억됩니다.">
+        <strong>신숙주</strong>
+    </div>
+
+    <div class="person-node tragic-node wang-node" data-title="왕방연" data-text="세조의 명을 받아 단종에게 사약을 전달해야 했던 비극적 인물입니다.">
+        <strong>왕방연</strong>
+    </div>
+
+</section>
+
+<section class="relation-list">
+
+    <div class="relation-item blue">
+        <strong>고명 충성</strong>
+        <p>김종서 → 단종</p>
+    </div>
+
+    <div class="relation-item blue">
+        <strong>복위 도모</strong>
+        <p>성삼문 → 단종</p>
+    </div>
+
+    <div class="relation-item red">
+        <strong>척살</strong>
+        <p>세조 ↔ 김종서</p>
+    </div>
+
+    <div class="relation-item blue">
+        <strong>킹메이커</strong>
+        <p>한명회 → 세조</p>
+    </div>
+
+    <div class="relation-item red">
+        <strong>변절</strong>
+        <p>신숙주 → 세조</p>
+    </div>
+
+    <div class="relation-item brown">
+        <strong>눈물의 시</strong>
+        <p>왕방연 → 단종</p>
+    </div>
+
+</section>
+
+<section class="network-info">
+
+    <h2 id="networkTitle">인물 관계망</h2>
+    <p id="networkText">
+        인물 노드를 클릭하면 관계 설명이 표시됩니다.
+    </p>
+
+</section>
+
+    </main>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

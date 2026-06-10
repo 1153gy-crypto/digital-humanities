@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>승자의 기록, 패자의 꿈</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="official">
+    <div id="introScreen">
+
+    <img src="assets/sagwan.png"
+    class="sagwan">
+
+    <div class="speech-bubble">
+
+        <h1>승자의 기록, 패자의 꿈</h1>
+
+
+        <p id="typingText"></p>
+
+        <div class="enter-wrap">
+            <button id="enterBtn">
+    
+                역사의 현장으로 들어가기
+
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div id="mainContent">
+
+    <header class="main-header">
+
+        <div class="main-logo">
+            승자의 기록, 패자의 꿈
+        </div>
+
+        <div class="mode-toggle-box">
+            <span>正史 모드</span>
+
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span>野私 모드</span>
+        </div>
+
+        <div class="header-icons">
+            🔍 🔔 🧒🏻 ☰
+        </div>
+
+    </header>
+
+    <div class="main-layout">
+
+        <aside class="left-panel">
+
+    <div class="archive-logo-box">
+        <div class="archive-mark">🌄</div>
+        <h3>조선역사 디지털 아카이브</h3>
+        <p>Joseon History Digital Archive</p>
+    </div>
+
+    <div class="list-title">
+        ☰ 전체 목록 보기
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🎊</span>
+        <div>
+            <strong>태조와 조선건국</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">⚔️</span>
+        <div>
+            <strong>태종과 왕자의 난</strong>
+        </div>
+    </div>
+
+    <div class="event-item active">
+        <span class="event-icon">⚡</span>
+        <div>
+           <strong id="mainEventTitle">단종과 세조</strong>
+           <p id="mainEventText">1453년 | 계유정난</p>
+           <p class="event-desc" id="mainEventDesc">
+               왕권의 안정 VS 충절과 비극
+           </p>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">📖</span>
+        <div>
+            <strong>연산군과 사화</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">👑</span>
+        <div>
+            <strong>중종과 중종반정</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🔥</span>
+        <div>
+            <strong>선조와 임진왜란</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">👑</span>
+        <div>
+            <strong>광해군과 인조</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🌀</span>
+        <div>
+            <strong>숙종과 환국정치</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🩻</span>
+        <div>
+            <strong>영조와 사도세자</strong>
+        </div>
+    </div>
+
+    <div class="event-item">
+        <span class="event-icon">🚢</span>
+        <div>
+            <strong>조선의 근대화</strong>
+        </div>
+    </div>
+
+</aside>
+
+        <main class="center-panel">
+
+            <section class="hero-banner">
+
+    <div class="hero-left">
+
+        <span class="hero-label">
+            조선왕조실록 · 승자의 기록
+        </span>
+
+        <h1>승자의 기록</h1>
+
+        <p>
+            국가가 공인한 공식 역사.<br>
+            조선왕조실록을 중심으로 사건을 바라봅니다.
+        </p>
+
+    </div>
+
+    <div class="hero-center">
+
+        <div class="hero-seal">
+            하나의 역사<br>
+            두 개의 시선
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <span class="hero-label">
+            야담 · 설화 · 문학 작품
+        </span>
+
+        <h1>패자의 꿈</h1>
+
+        <p>
+            기록되지 못한 목소리들.<br>
+            민간의 기억과 문학 속 서사를 살펴봅니다.
+        </p>
+
+    </div>
+
+</section>
+
+            <section class="feature-cards">
+
+                <a href="timeline.html" class="feature-card">
+                    <div class="num">📜</div>
+                    <h3>타임라인</h3>
+                    <p>사건의 흐름을 한눈에 확인하세요</p>
+                </a>
+
+                <a href="gis.html" class="feature-card">
+                    <div class="num">🗺️</div>
+                    <h3>시공간 지리</h3>
+                    <p>지도 위에서 역사를 탐색하세요</p>
+                </a>
+
+                <a href="network.html" class="feature-card">
+                    <div class="num">👥</div>
+                    <h3>인물 관계망</h3>
+                    <p>인물들의 관계와 연결을 분석하세요</p>
+                </a>
+
+                <a href="judge.html" class="feature-card">
+                    <div class="num">⚖️</div>
+                    <h3>뒷골목 판관 되어보기</h3>
+                    <p>나만의 관점으로 투표를 해보세요</p>
+                </a>
+
+            </section>
+
+            <section class="era-flow">
+
+                <h2>시대 흐름 바로보기</h2>
+
+                <div class="era-line">
+                    <span>태조<br>1392</span>
+                    <span>태종<br>1398</span>
+                    <span>세조<br>1453</span>
+                    <span>중종<br>1506</span>
+                    <span>선조<br>1592</span>
+                    <span>영조<br>1724</span>
+                    <span>근대화<br>1876</span>
+                </div>
+
+            </section>
+
+        </main>
+
+        <aside class="right-panel">
+
+            <div class="search-card">
+                <h3>검색</h3>
+
+                <div class="search-input">
+                    <input type="text" placeholder="검색어를 입력해주세요">
+                    <span>🔍</span>
+                </div>
+
+                <h4>최근 검색어</h4>
+
+                <div class="keywords">
+                    <span>1 단종</span>
+                    <span>2 세조</span>
+                    <span>3 엄흥도</span>
+                    <span>4 한명회</span>
+                    <span>5 노산군</span>
+                    <span>6 금성대군</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+
+    <h3>이 플랫폼의 야사란?</h3>
+
+    <div class="yasabadge-wrap">
+
+        <span class="yasabadge">夜</span>
+
+        <span class="plus">+</span>
+
+        <span class="yasabadge">私</span>
+
+    </div>
+
+    <p>
+        정사가 포착하지 못한,
+        혹은 의도적으로 배제한
+        기억의 층위까지 함께 담아내는 공간입니다.
+    </p>
+
+</div>
+
+            <div class="report-card">
+
+    <div class="report-bubble">
+
+    실록에 적히지 못한
+    이야기를 알고 계시오?<br>
+    
+    소관에게 제보해 주시면
+    기록해두겠소.
+
+    <div class="bubble-tail"></div>
+
+</div>
+
+    <img src="assets/sagwan.png"
+    class="report-sagwan">
+
+    <button class="report-btn">
+        뒷골목 사관에게 제보하기
+    </button>
+
+</div>
+
+        </aside>
+
+    </div>
+
+    <footer class="main-footer">
+        공지사항 | 신규 기능 업데이트 안내 | 제안 및 문의 | 이용 안내
+    </footer>
+
+</div>
+
+
+</section>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
